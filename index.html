@@ -1,0 +1,307 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title> Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- into section -->
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
+    >
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Portfolio.</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">home</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about">Skills</a>
+            </li>
+            
+            <li class="hover:text-gray-500">
+              <a href="#works">works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#contact">contact</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="resume.pdf" download="resume_sayyad_abdul_bari">Resume Download</a>
+            </li>
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a id="hLink" href="#">home</a>
+            </li>
+            <li>
+              <a id="hLink" href="#about">about me</a>
+            </li>
+            <li>
+              
+              <a id="hLink" href="#works">works</a>
+            </li>
+            <li>
+              <a id="hLink" href="#contact">contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <!-- image -->
+      <img
+        class="absolute bottom-0 lg:left-0 mx-auto h-5/6 w-full object-cover"
+        src="https://cdn.dribbble.com/users/2203197/screenshots/6442463/scheme_11dr.gif"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"
+      ></div>
+      <!-- animated text -->
+      <div
+        class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold"
+      >
+        <span class="text-gray-600"></span>
+        <p id="text" class="text-white"></p>
+      </div>
+      <!-- texts -->
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Sayyad Abdul Bari</h1>
+        <p class="text-gray-400">
+          I am a highly motivated M.Tech. student specializing in Data Science from IIT Roorkee. With a strong background in Big Data, Time Series Analysis, and Deep Learning, I have successfully completed several projects utilizing Python, PyTorch, TensorFlow, Keras, and MySQL. My experience in Computer Vision and AI for Investment has provided me with a deep understanding of machine learning algorithms and their practical applications. My passion for data science and my strong analytical skills make me a valuable asset to any team.
+        </p>
+        <a
+          class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit"
+          href="#contact"
+          >Hire me</a
+        >
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="px-10 dark:bg-slate-900">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden">
+            <img src="./img/portrait.jpeg" alt="" width="400px"/>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold">Skills:</h1>
+          
+          <p class="text-gray-400">
+            I possess a diverse set of technical skills that enable me to excel in data science projects. 
+          </p>
+          <h1 class="text-3xl font-medium dark:text-white">1. Computer Languages</h1>
+
+          <h2 class="text-gray-400 font-medium">Python(advanced)</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">SQL</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">R</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 class="text-gray-400 font-medium">C++</h2>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h1 class="text-3xl font-medium dark:text-white">2. Software Packages </h1>
+          
+            <h2 class="text-3x1 font-medium">Deep learning frameworks:</h2>
+                <h3 class="text-gray-400 font-medium">PyTorch</h3>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+                <h3 class="text-gray-400 font-medium">TensorFlow</h3>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+                  <h3 class="text-gray-400 font-medium">Keras</h3>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-1/2 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+            <h2 class="text-3x1 font-medium">Data analysis and visualization:</h2>
+              <h3 class="text-gray-400 font-medium">NumPy</h3>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+              <h3 class="text-gray-400 font-medium">Pandas</h3>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+                <h3 class="text-gray-400 font-medium">Matplotlib</h3>
+                <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+              <h3 class="text-gray-400 font-medium">Seaborn</h3>
+              <div class="w-full bg-gray-200 h-1.5 rounded-md">
+              <div class="w-1/3 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h2 class="text-3x1 font-medium">MySQL</h2>
+
+          <h1 class="text-3xl font-medium dark:text-white">Others: </h1>
+              <h2 class="text-gray-400 font-medium">Object-oriented programming (OOPs)</h2>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+                  <h2 class="text-gray-400 font-medium">Statistical Analysis</h2>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+                  <h2 class="text-gray-400 font-medium">Critical Thinking</h2>
+                  <div class="w-full bg-gray-200 h-1.5 rounded-md">
+                  <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Works -->
+    <div id="works" class="py-40 dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
+          <h1 class="text-3xl dark:text-white">Works & Projects</h1>
+          <p class="w-1/2 text-center text-gray-400">
+            These projects showcase my skills in Data Handling, Programming, Network Security, and machine learning, network security and demonstrate my ability to work on diverse projects in different domains.
+
+          </p>
+        </div>
+        <!-- bottom -->
+        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+          <!-- card -->
+          <div
+          class="p-2 w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white"> Securing Images with Triple DES Encryption</h1>
+            <p class="text-gray-400">
+              Securing Images with Triple DES Encryption" is a Python code that encrypts and decrypts image files using Triple DES algorithm with three keys entered by the user. The encryption provides confidentiality and authentication using the MODE_EAX and nonce for generating a random/pseudo-random number.            <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/Sayyad-Abdul-Bari/Securing-Images-with-Triple-DES-Encryption"
+              >Read More</a
+            >
+          </div>
+          <!-- card -->
+          <div
+          class="p-2 w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">Traffic Sign Board Detection </h1>
+            <p class="text-gray-400">
+              I develop a traffic sign board detection system using computer vision and machine learning techniques. The system will be able to detect and classify traffic signs in real-time, which can improve road safety and traffic management.            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/Sayyad-Abdul-Bari/Traffic-Sign-Board-Detection"
+              >Read More</a>
+          </div>
+          <!-- card -->
+          <div
+          class="p-2 w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">American Sign Language Detection with PyTorch </h1>
+            <p class="text-gray-400">
+              This project is an implementation of a Convolutional Neural Network (CNN) for American Sign Language detection using PyTorch. The goal of this project is to train a CNN model that can accurately detect American Sign Language gestures from images.            <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/Sayyad-Abdul-Bari/American-Sign-Language-Detection-with-PyTorch"
+              >Read More</a>
+          </div>
+          <!-- card -->
+          <div
+          class="p-2 w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110"
+          >
+            <img class="w-10" src="./img/icon.png" alt="" />
+            <h1 class="font-medium text-lg dark:text-white">GROUNDWATER Prediction Using GRACE Satellite </h1>
+            <p class="text-gray-400">
+              This project uses data from the Gravity Recovery and Climate Experiment (GRACE) satellite to predict ground water levels using machine learning techniques. The model achieved an R2 value of 94.88% and showed that latitude has a more significant impact on ground water thickness than longitude.            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="https://github.com/Sayyad-Abdul-Bari/GROUNDWATER-Prediction-Using-GRACE-Satellite"
+              >Read More</a
+            >
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- contact -->
+    <div id="contact" class="dark:bg-slate-900">
+      <div class="container mx-auto">
+        <!-- top -->
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-indigo-600 font-bold"><a href="mailto:abdulbarisayyad@gmail.com?http://www.geocities.com/wowhtml/">CLICK HERE TO CONTACT</h1>
+          
+          <p class="w-1 text-center text-gray-400">
+            Do you have an idea? Let's discuss it and see what we can do
+            together.
+          </p>
+        </div>
+        <!-- bottom -->
+        
+      
+    </div>
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logo.png" alt="" />
+          <span class="text-2xl font-bold text-white">Portfolio</span>
+        </div>
+        <div class="text-white"><img class="w-4 cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9ejKvxWCFVNSxEqFlDoiq6HWuRAZ0nFt2w&usqp=CAU" alt="" />      <a href="tel: +91-97530-33959">+91-97530-33959</a>
+        </div>
+        <div class="flex gap-2">
+          <a href="https://github.com/Sayyad-Abdul-Bari"><img class="w-4 cursor-pointer" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
+          <a href="http://www.linkedin.com/in/sayyad-abdul-bari-26027b1a3"><img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" /></a>
+          <div class="text-white">  <a href="mailto:no-one@snai1mai1.com?subject=look at this website&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/">tell a friend</a>
+
+        </div>
+      </div>
+    </div>
+    
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
